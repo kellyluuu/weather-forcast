@@ -6,13 +6,12 @@ import WeatherForcast from "./components/WeatherForecast";
 
 
 export default function App() {
-  const data = weatherData.map((el, index) => {
-    return <WeatherForcast img={el.img} condition={el.condition} time={el.time} key={index} />
+  const data = weatherData.map((el, index)=>{
+    return <WeatherForcast img={el.img} condition={el.condition} time={el.time} key={index}/>
   })
   return (
     <div className="App">
       {data}
-
     </div>
   );
 }
