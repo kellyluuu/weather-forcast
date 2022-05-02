@@ -11,7 +11,9 @@ export default function App() {
   })
   return (
     <div className="App">
+      <section>
       {data}
+      </section>
     </div>
   );
 }
